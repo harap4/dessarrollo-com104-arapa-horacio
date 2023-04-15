@@ -9,73 +9,53 @@
     <h1>Formulario de Datos 1</h1>
 
     <form action="" name="form" id="formulario" method="post">
-        <label for="id_apellido">Apellido:</label>
-        <input name="apellido" value="" type="text" id="id_apellido">
-
+        <label for="id_apellido">Apellido: </label>
+        <input type="text" id="id_apellido" name="apellido" value="">
         <br><br>
-        <label for="id_radio1">Rango de Edad menor 18 años</label>
+        <label for="id_nombres">Nombres: </label>
+        <input type="text" id="id_nombres" name="nombres" value="">
+        <br><br>
+        <label for="id_edad">Edad: </label>
+        <input type="text" id="id_edad" name="edad" value="">
+        <br><br>
+        <label>Sexo: 
+            <select name="sexo">
+                <option value="femenino" selected>Femenino</option>
+                <option value="masculino">Masculino</option>
+                <option value="otro">Otro</option>
+            </select>
+        </label>
+        <br><br>
+        <p>Rango de edad: </p>
+        <label for="id_radio1">Menor 18 años</label>
         <input name="rango_edad" type="radio" id="id_radio1" checked>
-        <label for="id_radio2">Rango de Edad mayor a 18 años y menor de 50 años</label>
+        <label for="id_radio2">Mayor 18 años </label>
         <input name="rango_edad" type="radio" id="id_radio2">
-        <label for="id_radio3">Rango de Edad mayor de 50 años </label>
-        <input name="rango_edad" type="radio" id="id_radio3">
-
         <br><br>
-        
-        <input type="checkbox" name="idiomas[]" value="ing">
-        <label for="">Inglés </label>
-        <input type="checkbox" name="idiomas[]" value="ital">
-        <label for="">Italiano </label>
-        <input type="checkbox" name="idiomas[]" value="esp" checked  >
-        <label for="">Español </label>
-        <input type="checkbox" name="idiomas[]"  value="port">
-        <label for="">Portugues </label>
-        <br>
-        <input type="hidden" name="oculto" value="1">
-        <br><br>
-
-        <label for="id_clave">Contraseña</label>
-        <input type="password" name="clave" value="" id="id_clave" class="" size="4" >
-        <br><br>
-        
-        <label for="id_estudios">Nivel de Estudio</label>
-        <select name="estudio" id="id_estudio">
-            <option value="primario" >Primario</option>
-            <option value="secundario" >Secundario</option>
-            <option value="universitario" selected >Universitario</option>
-            <option value="terciario" >Terciario</option>
-            <option value="no definido" >No definido</option>
-        </select>
-
-        <br><br>
-        <label for="id_estudios">Nivel de Estudio</label>
+        <label for="id_idiomas">Idiomas</label>
         <select name="combo_idiomas[]" id="combo_multiple" multiple>
-            <option value="esp" >Español</option>
-            <option value="ing" >Inglés</option>
-            <option value="ital"  >Italiano</option>
-            <option value="port" >Portugués</option>
-            <option value="alem" >Alemán</option>
+            <option value="ing">Inglés</option>
+            <option value="fra">Francés</option>
+            <option value="ale">Alemán</option>
+            <option value="hol">Holandés</option>
         </select>
-
+        <br><br>
+        <p>Extras</p>
+        <input type="checkbox" name="extras[]" value="auto" checked>
+        <label for="">auto </label>
+        <input type="checkbox" name="extras[]" value="camioneta">
+        <label for="">camioneta </label>
+        <input type="checkbox" name="extras[]" value="camion">
+        <label for="">camión </label>
         <br><br>
         <label for="id_comentario">Comentario</label>
         <textarea name="comentario" id="id_comentario" >
-            <!-- aqui va el valor del texto -->
+            <!-- ingrese comentario -->
         </textarea>
         <br><br>
 
         <input name="botonAceptar" id="id_botonAceptar" value="Aceptar" type="submit">
         <input name="botonCancelar" id="id_botonCancelar" value="Cancelar" type="button">
-        
-        <p>párrafo nuevo</p>
-
-        <p>párrafo nuevo2</p>
-        <p>párrafo nuevo3</p>
-        <p>párrafo nuevo4</p>
-        <p>párrafo nuevo5</p>
-        <h2>Nuevo título</h2>
-        <h2>Nuevo título</h2>
-        <h2>Nuevo título</h2>
     </form>
     
 </body>
